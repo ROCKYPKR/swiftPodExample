@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import swiftPodExample
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        ReplaceMe.requestData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

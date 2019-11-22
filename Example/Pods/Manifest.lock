@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - swiftPodExample (0.1.0):
+    - Alamofire (~> 4.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - swiftPodExample (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  swiftPodExample:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  swiftPodExample: bbc69a2829360464b012eac33d5c87fbe9f59f82
+
+PODFILE CHECKSUM: 2c05af5ee7a394bfab249266bc9227a8f56d7833
+
+COCOAPODS: 1.8.4

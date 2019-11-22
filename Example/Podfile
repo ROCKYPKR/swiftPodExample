@@ -1,6 +1,9 @@
 use_frameworks!
 
 target 'swiftPodExample_Example' do
+   platform :ios, '9.0'
+   pod 'Alamofire', '~> 4.5'
+
   pod 'swiftPodExample', :path => '../'
 
   target 'swiftPodExample_Tests' do

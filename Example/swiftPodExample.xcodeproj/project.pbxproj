@@ -39,11 +39,11 @@
 		607FACE51AFB9204008FA782 /* swiftPodExample_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftPodExample_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7DAFF29B5944AFCA4B216EC9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		91996ED49033E3C0F24E9907 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7DAFF29B5944AFCA4B216EC9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		91996ED49033E3C0F24E9907 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9A6B352DD73ACA66B4BC6608 /* Pods-swiftPodExample_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftPodExample_Example.release.xcconfig"; path = "Target Support Files/Pods-swiftPodExample_Example/Pods-swiftPodExample_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9E772F13DB2D251EEA407A6C /* Pods-swiftPodExample_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftPodExample_Tests.debug.xcconfig"; path = "Target Support Files/Pods-swiftPodExample_Tests/Pods-swiftPodExample_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A6A3CEA05E4C4586C98DB95D /* swiftPodExample.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = swiftPodExample.podspec; path = ../swiftPodExample.podspec; sourceTree = "<group>"; };
+		A6A3CEA05E4C4586C98DB95D /* swiftPodExample.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = swiftPodExample.podspec; path = ../swiftPodExample.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A954967F370F41FC2D635BE8 /* Pods_swiftPodExample_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftPodExample_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF730B62914398B5020A26C /* Pods-swiftPodExample_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftPodExample_Tests.release.xcconfig"; path = "Target Support Files/Pods-swiftPodExample_Tests/Pods-swiftPodExample_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F300D0D31E3467A6A38E71C1 /* Pods-swiftPodExample_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftPodExample_Example.debug.xcconfig"; path = "Target Support Files/Pods-swiftPodExample_Example/Pods-swiftPodExample_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				9E772F13DB2D251EEA407A6C /* Pods-swiftPodExample_Tests.debug.xcconfig */,
 				ABF730B62914398B5020A26C /* Pods-swiftPodExample_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 644G32NTXJ;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 644G32NTXJ;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,10 +271,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-swiftPodExample_Example/Pods-swiftPodExample_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/swiftPodExample/swiftPodExample.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/swiftPodExample.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +482,7 @@
 			baseConfigurationReference = F300D0D31E3467A6A38E71C1 /* Pods-swiftPodExample_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 644G32NTXJ;
 				INFOPLIST_FILE = swiftPodExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +498,7 @@
 			baseConfigurationReference = 9A6B352DD73ACA66B4BC6608 /* Pods-swiftPodExample_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 644G32NTXJ;
 				INFOPLIST_FILE = swiftPodExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E772F13DB2D251EEA407A6C /* Pods-swiftPodExample_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 644G32NTXJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABF730B62914398B5020A26C /* Pods-swiftPodExample_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 644G32NTXJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
